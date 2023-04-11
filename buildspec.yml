@@ -9,7 +9,7 @@ phases:
       - unzip awscliv2.zip
       - cd aws
       - chmod +x ./install
-      - sudo ./aws/install
+      - sudo ./install --update
       - cd ..
   pre_build:
     commands:
