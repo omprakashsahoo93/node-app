@@ -7,8 +7,10 @@ phases:
       - echo Installing AWS CLI...
       - curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
       - unzip awscliv2.zip
-      - chmod +x ./aws/install
+      - cd aws
+      - chmod +x ./install
       - sudo ./aws/install
+      - cd ..
   pre_build:
     commands:
       - echo Logging in to Amazon ECR...
